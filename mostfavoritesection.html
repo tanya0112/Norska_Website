@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Indie Flower', cursive;
+        }
+
+        .menu {
+            font-weight: 1em;
+            z-index: 1000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            padding: 40px 100px;
+            overflow: hidden;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            display: block;
+
+        }
+
+        .menu a:hover {
+            color: #512717;
+        }
+
+        .img1 {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/5b5b324075f9ee76014ea1ec/1533741388198-BPV1BS59SH7F13ZUJ1DF/01_Rituals_Design_Cosmetic_packaging_product_Namast%C3%A9_vormgeving.jpg?format=1500w);
+            height: 600px;
+            width: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column {
+            border: 2px solid black;
+            padding: 30px;
+            width: 33.3%;
+            float: left;
+            height: 400px;
+            background-size: cover;
+            color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        .i1 {
+            background-image: url(https://images.pexels.com/photos/5973784/pexels-photo-5973784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+            text-align: center;
+
+        }
+
+        .i2 {
+            background-image: url(https://images.pexels.com/photos/6690438/pexels-photo-6690438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .i3 {
+            background-image: url(https://images.pexels.com/photos/4612154/pexels-photo-4612154.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        .i4 {
+            background-image: url(https://images.pexels.com/photos/6634844/pexels-photo-6634844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        .i5 {
+            background-image: url(https://images.pexels.com/photos/6127875/pexels-photo-6127875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        .i6 {
+            background-image: url(https://images.pexels.com/photos/7157115/pexels-photo-7157115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        .i7 {
+            background-image: url(https://images.pexels.com/photos/2866796/pexels-photo-2866796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        .i8 {
+            background-image: url(https://images.pexels.com/photos/9277080/pexels-photo-9277080.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        .i9 {
+            background-image: url(https://images.pexels.com/photos/6988206/pexels-photo-6988206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+
+            text-align: center;
+        }
+
+        span {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 12px;
+            color: #C99B46;
+        }
+
+        span:hover {
+            font-size: 45px;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+            transition-duration: 2s;
+        }
+
+        .column:hover {
+            background-image: none;
+            background-color: #BC8C8F;
+            color: aliceblue;
+        }
+
+        @media all and (max-width:991px) {
+            .menu {
+                display: block;
+                overflow: hidden;
+
+            }
+
+            .menu a {
+                background-size: cover;
+                display: block;
+                width: 100%;
+                padding: 2px 1px;
+                margin: 2px 2px;
+            }
+
+            .menu h2 {
+                display: block;
+                position: relative;
+                top: -10px;
+
+            }
+
+            span {
+                font-size: 1.6em;
+            }
+
+            .menu a:hover {
+                color: black;
+                background-color: transparent;
+
+            }
+            .column{
+                width:50%;
+            }
+
+        }
+
+        @media all and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <h1 class="logo"> Norska Skincare <i class="fas fa-leaf"></i></h1>
+        <a href="skincarewebsite.html">Home</a>
+        <a href="mostfavoritesection.html">Most Favourite</a>
+        <a href="Whatwemakesection.html">What We Make</a>
+        <a href="Aboutussection.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="img1">
+        <span>Healthy Skin Is Not An Overnight Process</span>
+    </div>
+    <div class="sec1">
+        <div class="row">
+            <div class="column i1">
+                <h2>Rose Ritual </h2>
+
+            </div>
+            <div class="column i2">
+                <h2>Fragnance Ritual</h2>
+            </div>
+            <div class="column i3">
+                <h2>Oil Ritual</h2>
+            </div>
+            <div class="column i4">
+                <h2>Salt Ritual</h2>
+            </div>
+            <div class="column i5">
+                <h2>Chanel N"5 Ritual</h2>
+            </div>
+
+            <div class="column i6">
+                <h2>Dior Ritual</h2>
+            </div>
+            <div class="column i7">
+                <h2>Filled With Grace Ritual</h2>
+            </div>
+            <div class="column i8">
+                <h2>Candle And Letter Ritual</h2>
+            </div>
+            <div class="column i9">
+                <h2>Ambassador Ritual</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

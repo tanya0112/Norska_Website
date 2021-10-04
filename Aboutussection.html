@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgb(209,205,212);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Indie Flower', cursive;
+        }
+
+        .menu{
+    font-weight:1em;
+    z-index:1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 40px 100px;
+    overflow: hidden;
+
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    display:block;
+    
+}
+
+        .menu a:hover {
+            color: #512717;
+        }
+
+        .bimage {
+            background-image: url(https://images.pexels.com/photos/2215380/pexels-photo-2215380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            height: 600px;
+            width: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 12px;
+            color: #396CA1;
+        }
+
+        span:hover {
+            font-size: 27px;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+            transition-duration: 2s;
+        }
+
+        .column {
+            height: 400px;
+            background-size: cover;
+            float: left;
+            width:30%;
+            margin:20px;
+            animation: anim 10s infinite;
+        }
+
+        .i1 {
+            background-image: url(https://images.pexels.com/photos/2479646/pexels-photo-2479646.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-repeat: no-repeat;
+          
+        }
+
+        .i2 {
+            background-image: url(https://images.pexels.com/photos/123014/pexels-photo-123014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            font-size: 30px;
+            background-repeat: no-repeat;
+         
+        }
+
+        .i3 {
+            background-image: url(https://images.pexels.com/photos/950209/pexels-photo-950209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-repeat: no-repeat;
+       
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #396CA1;
+        }
+
+        .column1 {
+            
+            padding: 30px;
+            width: 50%;
+            float: left;
+            height: 400px;
+
+            color: #396CA1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row1 {
+            width: 100%
+        }
+        @media all and (max-width:991px) {
+            .menu {
+                display: block;
+                overflow: hidden;
+
+            }
+
+            .menu a {
+                background-size: cover;
+                display: block;
+                width: 100%;
+                padding: 2px 1px;
+                margin:2px 2px;
+            }
+
+            .menu h2 {
+                display: block;
+                position: relative;
+                top: -10px;
+
+            }
+
+            span {
+                font-size: 1.6em;
+            }
+
+            .menu a:hover {
+                color: black;
+                background-color:transparent;
+
+            }
+            .column{
+                width:40%;
+            }
+        }
+        @media all and (max-width:600px){
+            .column{
+                width:100%;
+            }
+            .column1{
+                width:100%;
+                height:auto;
+                
+            }
+        }
+        @keyframes anim{
+            from{
+                transform: rotateY(0deg);
+            }
+            to{
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <h1 class="logo"> Norska Skincare <i class="fas fa-leaf"></i></h1>
+        <a href="skincarewebsite.html">Home</a>
+        <a href="mostfavoritesection.html">Most Favourite</a>
+        <a href="Whatwemakesection.html">What We Make</a>
+        <a href="Aboutussection.html">About Us</a>  
+        <a href="contact.html">Contact</a>
+    </nav>
+    <!--
+    <div class="bimage">
+        <div class="row1">
+            <div class="column1 c1">
+                <h1>Filters Are Great, <br> But Skincare Is Better</h1>
+            </div>
+            <div class="column1 c2">
+                <p> Our Skincare Routine helps your skin stay in good condition: You're shedding skin cells throughout
+                    the day, so it's important to keep your skin glowing and in good condition. An effective routine can
+                    help prevent acne, treat wrinkles, and help keep your skin looking its best </p>
+            </div>
+        </div>
+          <span> </span> <br>
+         <h2> </h2>
+
+    </div>
+-->
+    <div class="sec2">
+        <div class="row1">
+            <div class="column1 c1">
+                <h1>Filters Are Great, <br> But Skincare Is Better</h1>
+            </div>
+            <div class="column1 c2">
+                <p> Our Skincare Routine helps your skin stay in good condition: You're shedding skin cells throughout
+                    the day, so it's important to keep your skin glowing and in good condition. An effective routine can
+                    help prevent acne, treat wrinkles, and help keep your skin looking its best </p>
+            </div>
+        <div class="row">
+            <div class="column i1"></div>
+            <div class="column i2"></div>
+            <div class="column i3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
